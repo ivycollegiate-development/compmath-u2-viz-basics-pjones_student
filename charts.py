@@ -27,11 +27,7 @@ plt.scatter(xs, ys, color="tab:blue")
 # FIX ME #1: a chart with no labels is unreadable.
 # Add a title and axis labels (what would you call each axis? include units)
 plt.title("Study Hours vs Test Score")
-<<<<<<< HEAD
 plt.xlabel("Hours Studied")
-=======
-plt.xlabel("Weekly Study Hours")
->>>>>>> 912cdf6023637d5c05ccc86556b843b4c576c024
 plt.ylabel("Percentage Score")
 plt.savefig("chart_study_vs_score.png", dpi=120)
 print("saved chart_study_vs_score.png")
@@ -44,22 +40,14 @@ for r in rows:
     elif r["study"] < 25: bands["20-25h"] += 1
     elif r["study"] < 30: bands["25-30h"] += 1
     elif r["study"] < 35: bands["30-35h"] += 1
-<<<<<<< HEAD
     else:                 bands["35h+"] += 1
-=======
-    else:                bands["35h+"] += 1
->>>>>>> 912cdf6023637d5c05ccc86556b843b4c576c024
 
 plt.figure()
 plt.bar(list(bands.keys()), list(bands.values()), color="tab:orange")
 # FIX ME #2: this chart should label its axes too -- and the y-axis
 # here counts STUDENTS, so make that obvious. Add title + both labels.
 plt.title("Study Hours vs Test Score")
-<<<<<<< HEAD
 plt.xlabel("Student Count")
-=======
-plt.xlabel("Weekly Study Hours")
->>>>>>> 912cdf6023637d5c05ccc86556b843b4c576c024
 plt.ylabel("Percentage Score")
 plt.savefig("chart_study_bands.png", dpi=120)
 print("saved chart_study_bands.png")
